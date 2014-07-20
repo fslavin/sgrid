@@ -48,6 +48,9 @@ class GameObj(object):
     def printFirst(self):
         print(self.firstDesc)
 
+    def printName(self):
+        print(self.name)
+
     def addInv(self, item):
         self.inventory.append(item)
 

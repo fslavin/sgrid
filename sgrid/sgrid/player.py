@@ -130,9 +130,10 @@ class Player(GameObj):
         else:
             # Change to the new location
             self.chgCurrLoc(dir)
-            print("I moved {} into {}.".format(dir, self.currLoc.getName()))
-            if self.currLoc.checkSeen() == False:
-                self.currLoc.printDesc()
+            print("[{}]".format(self.currLoc.name))
+            #print("I moved {} into {}.".format(dir, self.currLoc.getName()))
+            #if self.currLoc.checkSeen() == False:
+            #    self.currLoc.printDesc()
 
     def north(self, args):
         self.move('north')
